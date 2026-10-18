@@ -1,0 +1,2 @@
+title: Capture a shell value
+description: Keep one command's output in the shell and use that name in the next command.
