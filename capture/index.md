@@ -4,19 +4,20 @@ This lab sets a name in the shell, captures a command that uses it, and then use
 
 ## Set a name
 
-This sets `NS` in the current shell. It is not exported.
-
-```shell
-NS=demo
-```
+> [!NOTE]
+> This sets `NS` in the current shell. It is not exported.
+>
+> ```shell
+> NS=demo
+> ```
 
 ## Capture it
 
-Run this. It reads `$NS` from that same shell and saves the output as `NS_COPY`.
+1. Run this. It reads `$NS` from that same shell and saves the output as `NS_COPY`.
 
-```env var="NS_COPY" interpolated="true"
-printf %s "$NS"
-```
+   ```env var="NS_COPY" interpolated="true"
+   printf %s "$NS"
+   ```
 
 The page shows `NS_COPY` and the value. If this ran in a new shell, the value would be empty.
 
