@@ -1,0 +1,4 @@
+layout {
+  pane name="edit" size="50%"
+  pane name="run" size="50%"
+}
