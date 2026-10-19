@@ -9,6 +9,9 @@ Click the card. The terminal splits into a server pane and a client pane, and th
 ```zellij layout="server-client"
 ```
 
+> [!WARNING]
+> Click the card before you run the blocks below. A server or client block run before its layout is open fails with "Open the layout above this block first".
+
 ## Start the server
 
 ```shell panel="server"
