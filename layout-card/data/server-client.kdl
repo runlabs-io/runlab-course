@@ -1,0 +1,8 @@
+layout {
+  pane split_direction="vertical" {
+    pane name="server" size="50%" {
+      focus true
+    }
+    pane name="client" size="50%"
+  }
+}
