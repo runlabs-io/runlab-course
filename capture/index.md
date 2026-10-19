@@ -12,7 +12,7 @@ This sets `NS` in the current shell. It is not exported.
 
 ## Capture it
 
-Run this. It reads `$NS` from this shell and saves the output as `NS_COPY`.
+Run this. It reads `$NS` from this shell and saves the output as `NS_COPY`. The next step prints `$NS_COPY`, so it needs that value in this shell.
 
 ```env var="NS_COPY" interpolated="true"
 echo -n "$NS"
