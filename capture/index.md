@@ -1,35 +1,32 @@
 # Capture a value
 
-This lab sets a name in the shell, captures a command that uses it, and then uses the captured name.
+Set a name in this shell, save a command's output under a second name, and use that name in the next command.
 
 ## Set a name
 
-> [!NOTE]
-> This sets `NS` in the current shell. It is not exported.
->
-> ```shell
-> NS=demo
-> ```
+```shell
+NS=demo
+```
+
+This sets `NS` in the current shell. It is not exported.
 
 ## Capture it
 
-1. Run this. It reads `$NS` from that same shell and saves the output as `NS_COPY`.
+Run this. It reads `$NS` from this shell and saves the output as `NS_COPY`.
 
-   ```env var="NS_COPY" interpolated="true"
-   printf %s "$NS"
-   ```
+```env var="NS_COPY" interpolated="true"
+echo -n "$NS"
+```
 
-The page shows `NS_COPY` and the value. If this ran in a new shell, the value would be empty.
+You should see `NS_COPY` and `demo`. A new shell would not have `NS`, so the value would be empty.
 
 ## Use the name
 
-The next command runs in that same shell, so `$NS_COPY` is the value you just captured.
+This runs in the same shell, so `$NS_COPY` is the value you just captured.
 
 ```shell completion="true"
 echo "the name is $NS_COPY"
 ```
-
-A new shell does not have `NS_COPY`. Nothing was written to a file.
 
 ## Summary
 
