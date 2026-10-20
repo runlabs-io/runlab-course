@@ -15,3 +15,9 @@ echo edit
 ```shell panel="run"
 echo run
 ```
+
+## Show a file
+
+A link can show a file in a pane. This one shows `data/hello.txt` in the run pane.
+
+[Show hello.txt](bat:data/hello.txt){panel="run"}
