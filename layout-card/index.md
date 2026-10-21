@@ -1,33 +1,72 @@
-# Layout cards
+# Panes
 
-This lab shows a zellij layout block, which draws a card that opens a terminal layout when you click it.
+The terminal on this page is a set of panes. A lesson can arrange them: one pane, two side by side, two stacked. This lab shows how. Each step is a **layout** block, pink like the layout links in other lessons. The header lists the panes the layout creates, and the button is **arrange**.
 
-## Open the panes
+## One pane
 
-Click the card. The terminal splits into a server pane and a client pane, and the card turns green.
+The terminal starts as a single pane. Everything you type goes there.
 
-```zellij layout="server-client"
+## Two panes, side by side
+
+Click arrange. The terminal splits into a `server` pane on the left and a `client` pane on the right.
+
+```zellij layout="two-pane"
 ```
 
-> [!WARNING]
-> Click the card before you run the blocks below. A server or client block run before its layout is open fails with "Open the layout above this block first".
-
-## Start the server
+Start a server in the first pane:
 
 ```shell panel="server"
 python3 -m http.server 8000
 ```
 
-## Call it from the client
+Call it from the second:
 
 ```shell panel="client"
 curl -sI http://localhost:8000
 ```
 
-## A card with a caption
+> [!NOTE]
+> Click arrange before you run the blocks above. A block that names a pane the terminal doesn't have yet fails with "Open the layout above this block first".
 
-A block body is the card's caption, the same as the text of an inline layout link.
+Stop the server:
 
-```zellij layout="server-client"
-Reset the two panes
+```key panel="server"
+Ctrl+C
 ```
+
+## Two panes, stacked
+
+The same kind of block can arrange a different split. A caption in the body replaces the default "Open panes" text.
+
+```zellij layout="stacked"
+Stack the panes: one above the other
+```
+
+## Back to one pane
+
+Arranging replaces the layout, so this block puts the terminal back as it started:
+
+```zellij layout="one-pane"
+Back to one pane
+```
+
+If you ever type `exit` in a single pane and land in a bare terminal, any arrange block puts the panes back. Click it again whenever the panes aren't how you want them.
+
+## As a link
+
+The same step fits in a sentence: [arrange two panes](zellij:two-pane), or go [back to one](zellij:one-pane). Hover the link to see which panes it makes.
+
+## How it is written
+
+````markdown
+```zellij layout="two-pane"
+```
+
+```zellij layout="stacked"
+Stack the panes: one above the other
+```
+
+[arrange two panes](zellij:two-pane)
+````
+
+The name is a file in `data/`: `two-pane.kdl`, `stacked.kdl`, `one-pane.kdl`. Leave `layout:` out of `config.yaml`, as this lab does, so the learner does the arranging.

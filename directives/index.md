@@ -1,8 +1,23 @@
 # The lesson directives
 
-A lesson is mostly explanation, and a few steps the learner does. A **directive** is one of those steps: something that happens when you click. There are four, and each comes in two forms. A **block** stands out as a task. A **link** fits inside a sentence. Use a block for a step the learner has to do, and a link for something optional.
+A lesson is mostly explanation, and a few steps the learner does. A **directive** is one of those steps: something that happens when you click. There are five, and each comes in two forms. A **block** stands out as a task. A **link** fits inside a sentence. Use a block for a step the learner has to do, and a link for something optional.
 
-This lab's terminal opens in two panes: `server` on top and `client` below.
+Each directive has its own colour, so you can tell them apart at a glance: run is purple, view cyan, key orange, service green and layout pink.
+
+## layout
+
+This lab's terminal opens as a single pane. A layout block arranges it into more. Click **arrange** to get two panes: `server` on top and `client` below. The header lists the panes the layout creates. There is nothing to paste, so it has no Copy button.
+
+```zellij layout="two-pane"
+```
+
+A caption in the body replaces the default "Open panes" text. Click the button again at any time to put the panes back as they were, for example after closing one by mistake.
+
+```zellij layout="two-pane"
+Put the panes back
+```
+
+The same step as a link: [arrange two panes](zellij:two-pane). Hover the link to see which panes it makes.
 
 ## run
 
@@ -68,6 +83,9 @@ data/hello.txt
 ```key panel="server"
 Ctrl+C
 ```
+
+```zellij layout="two-pane"
+```
 ````
 
 Links name the directive before the colon:
@@ -77,6 +95,7 @@ Links name the directive before the colon:
 [look at hello.txt](view:data/hello.txt){panel="client"}
 [open the server](service:hello-server)
 [press Ctrl+C](key:Ctrl+C){panel="server"}
+[arrange two panes](zellij:two-pane)
 ````
 
-Everything except `service` takes a `panel`, because a service opens a tab and not a pane.
+Run, view and key take a `panel`. A service opens a tab and a layout arranges the whole terminal, so neither takes one. A layout block names a file in `data/`, such as `data/two-pane.kdl`. Leave `layout:` out of `config.yaml` when you want the learner to do the arranging themselves, as this lab does.
