@@ -11,11 +11,13 @@ This lab's terminal opens as a single pane. A layout block arranges it into more
 ```zellij layout="two-pane"
 ```
 
-A caption in the body replaces the default "Open panes" text. Click the button again at any time to put the panes back as they were, for example after closing one by mistake.
+A caption in the body replaces the default "Open panes" text. This block is the same layout with a caption that says what a second click does:
 
 ```zellij layout="two-pane"
-Put the panes back
+Arrange the two panes again
 ```
+
+Arranging a layout that is already open sets the panes up again, so click it whenever the terminal isn't how you want it, for example after closing a pane by mistake.
 
 The same step as a link: [arrange two panes](zellij:two-pane). Hover the link to see which panes it makes.
 
