@@ -1,0 +1,4 @@
+layout {
+  pane name="server" size="50%"
+  pane name="client" size="50%"
+}
