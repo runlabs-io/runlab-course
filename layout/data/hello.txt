@@ -1,1 +1,2 @@
-This file is shown in the run pane by a link in the lesson.
+Hello from the runlab course.
+This file lives in the lab's data folder.
