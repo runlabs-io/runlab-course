@@ -1,0 +1,6 @@
+layout {
+  pane name="top" size="50%" {
+    focus true
+  }
+  pane name="bottom" size="50%"
+}
