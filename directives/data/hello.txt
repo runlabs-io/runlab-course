@@ -1,0 +1,2 @@
+Hello from the lesson directives lab.
+This file lives in the lab's data folder.
