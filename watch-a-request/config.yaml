@@ -8,3 +8,4 @@ services:
   port: 8000
   path: /
   header: false
+time_limit: 8m
