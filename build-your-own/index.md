@@ -26,7 +26,8 @@ Get the latest release from the **Author pack** link at the top of runlabs.io, u
 ./prereqs
 ```
 
-It installs what a lab build needs (Packer, and a small helper that gives `trylab` the network access a lab needs).
+It installs what a lab needs to run: **Firecracker**, the microVM that each lab runs in, plus QEMU, Packer (which builds a lab's disk), and a small helper that gives `trylab` the network access a lab needs.
+Firecracker is written into the same folder, as `./firecracker`.
 It is safe to run twice.
 
 ## Run a lab
