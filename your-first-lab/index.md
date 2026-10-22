@@ -13,11 +13,7 @@ Make a folder, and write the smallest lesson there is into it:
 
 ```shell
 mkdir -p mylab
-cat > mylab/index.md <<'EOF'
-# Hello
-
-This is my first lab.
-EOF
+printf '# Hello\n\nThis is my first lab.\n' > mylab/index.md
 ```
 
 Look at what you made:
@@ -37,14 +33,11 @@ A second file is optional: `config.yaml`.
 It holds the lab's **title** and **description**, which is what the catalog shows before someone opens the lab.
 
 ```shell
-cat > mylab/config.yaml <<'EOF'
-title: Hello
-description: My first lab.
-EOF
+printf 'title: Hello\ndescription: My first lab.\n' > mylab/config.yaml
 cat mylab/config.yaml
 ```
 
-That is two files and about six lines.
+That is two files and about five lines.
 Later labs add one idea at a time: blocks that run commands, a terminal split in two, a web page you can open.
 You can stop at any point and have a working lab.
 
