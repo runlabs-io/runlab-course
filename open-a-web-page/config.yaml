@@ -1,0 +1,10 @@
+title: Open a web page
+description: Start a small web server in one pane and open its page in a browser tab with a service block.
+disk_name: default
+layout: two-pane
+services:
+- name: Hello server
+  type: http
+  port: 8000
+  path: /
+  header: false
