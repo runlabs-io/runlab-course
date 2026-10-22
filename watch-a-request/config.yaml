@@ -1,0 +1,11 @@
+title: Watch a request arrive
+description: Serve in one pane, call from the other, and watch the log. A pattern you will use everywhere.
+disk_name: default
+layout: two-pane
+services:
+- name: Hello server
+  type: http
+  port: 8000
+  path: /
+  header: false
+time_limit: 8m

@@ -1,4 +1,20 @@
-Sample runlab labs.
+# runlab-course
+
+The hands-on course that teaches how to write runlab labs, as labs. Each lab adds one idea, and a lab only uses what an earlier lab taught.
+
+| # | Lab | What it teaches |
+|---|---|---|
+| 1 | `get-started` | The page, the terminal, one code block, how to finish |
+| 2 | `your-first-lab` | A lab is a folder with an `index.md`; `config.yaml` is for the catalog |
+| 3 | `run-and-view` | A block that runs a command, and one that shows a file |
+| 4 | `layout-card` | Panes: arrange the terminal; press a key in a pane |
+| 5 | `open-a-web-page` | A service block opens a web page in a tab |
+| 6 | `watch-a-request` | Serve in one pane, call from the other, watch the log |
+| 7 | `build-your-own` | The author pack, `trylab`, and publishing |
+
+The other folders at the top level (`alerts`, `basics`, `capture`, `docker`) are earlier samples. Labs that need their own disk are kept in `samples/` (see its README).
+
+A lab that uses the shared default disk (no `setup.sh`, no `data/` that the lesson reads inside the lab) needs no disk build.
 
 ## License
 

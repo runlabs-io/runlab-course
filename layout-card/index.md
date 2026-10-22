@@ -69,4 +69,8 @@ Stack the panes: one above the other
 [arrange two panes](zellij:two-pane)
 ````
 
-The name is a file in `data/`: `two-pane.kdl`, `stacked.kdl`, `one-pane.kdl`. Leave `layout:` out of `config.yaml`, as this lab does, so the learner does the arranging.
+The name, such as `two-pane`, is the name of a **layout file** that the lab carries in its `data/` folder: `data/two-pane.kdl`.
+A layout file says which panes exist, what they are called, and how they are split.
+Layouts come from [Zellij](https://zellij.dev), the program that manages the panes in the terminal, and they are written in a small format called KDL.
+You do not need to know either to use one: start from a layout file that does nearly what you want, and change the pane names.
+The three used here are in this lab's folder on [GitHub](https://github.com/runlabs-io/runlab-course/tree/main/layout-card/data).
