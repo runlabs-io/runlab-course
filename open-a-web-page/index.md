@@ -1,7 +1,9 @@
 # Open a web page
 
 The terminal has started in two panes: **server** on the left and **client** on the right.
-You met panes in the last lab. Here they get a job.
+You met panes in the last lab, where you arranged them yourself.
+Here the lab arranged them for you: its `config.yaml` has a line, `layout: two-pane`, which makes the terminal start already split.
+Now the panes get a job.
 
 A lab can run a web server for you to look at.
 You start the server in one pane and open its page in a browser tab.
