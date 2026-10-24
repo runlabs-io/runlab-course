@@ -1,0 +1,11 @@
+title: Learn to author labs
+address: /learn
+description: "Start here. Seven short hands-on labs that take you from your first lab to publishing your own."
+labs:
+- get-started
+- your-first-lab
+- run-and-view
+- layout-card
+- open-a-web-page
+- watch-a-request
+- build-your-own
