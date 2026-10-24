@@ -1,6 +1,6 @@
-# runlab-course
+# runlab-labs
 
-The hands-on course that teaches how to write runlab labs, as labs. Each lab adds one idea, and a lab only uses what an earlier lab taught.
+The labs runlab publishes. `tutorial/` is the hands-on course that teaches how to write runlab labs, as labs. Each lab adds one idea, and a lab only uses what an earlier lab taught.
 
 | # | Lab | What it teaches |
 |---|---|---|
@@ -12,7 +12,7 @@ The hands-on course that teaches how to write runlab labs, as labs. Each lab add
 | 6 | `watch-a-request` | Serve in one pane, call from the other, watch the log |
 | 7 | `build-your-own` | The author pack, `trylab`, and publishing |
 
-The other folders at the top level (`alerts`, `basics`, `capture`, `docker`, `nginx`) are earlier samples. `nginx` has its own disk and snapshot, so connecting this repository and pressing Refresh builds it. Labs that need their own disk and are not ready to build are kept in `samples/` (see its README).
+`samples/` holds the other labs: earlier samples (`alerts`, `basics`, `capture`, `docker`), `nginx`, which has its own disk and snapshot, and `directives` and `layout`, which share a disk built from their `data/` folder. Connecting this repository and pressing Refresh builds the disks that need building.
 
 A lab that uses the shared default disk (no `setup.sh`, no `data/` that the lesson reads inside the lab) needs no disk build.
 

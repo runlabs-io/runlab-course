@@ -73,4 +73,4 @@ The name, such as `two-pane`, is the name of a **layout file** that the lab carr
 A layout file says which panes exist, what they are called, and how they are split.
 Layouts come from [Zellij](https://zellij.dev), the program that manages the panes in the terminal, and they are written in a small format called KDL.
 You do not need to know either to use one: start from a layout file that does nearly what you want, and change the pane names.
-The three used here are in this lab's folder on [GitHub](https://github.com/runlabs-io/runlab-course/tree/main/layout-card/data).
+The three used here are in this lab's folder on [GitHub](https://github.com/runlabs-io/runlab-labs/tree/main/tutorial/layout-card/data).
