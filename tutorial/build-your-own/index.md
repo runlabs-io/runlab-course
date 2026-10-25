@@ -19,8 +19,9 @@ If the file exists, you have it.
 
 ## Get the author pack
 
-The pack is one download: **trylab**, the program you run, and the scripts and example labs around it.
-Get the latest release from the **Author pack** link at the top of runlabs.io, unpack it, and run, from the unpacked folder:
+The pack is one download: **trylab**, the program you run, and the scripts around it, with the labs of this tutorial.
+If you are reading this on runlabs.io, get the latest release from the **Author pack** link at the top of the page and unpack it. If you opened this lab with `trylab`, you already have the pack.
+From the unpacked folder, run:
 
 ```console
 ./prereqs
@@ -35,29 +36,29 @@ It is safe to run twice.
 `trylab` runs a lab folder on your machine, the way a learner will see it:
 
 ```console
-./trylab basics
+./trylab runlab-labs/tutorial/get-started
 ```
 
 Your browser opens the lab: the same page you are on now, with your own terminal.
-The pack comes with three examples, `basics`, `docker` and `nginx`. Copy one to start your own, or make a folder with an `index.md`, as you did two labs ago, and run that: `./trylab path/to/yourlab`.
+The pack comes with the labs of this tutorial, in `runlab-labs/tutorial/`, so you can open the source of every lab you played. Copy one to start your own, or make a folder with an `index.md`, as you did two labs ago, and run that: `./trylab path/to/yourlab`.
 
 ## Change and run again
 
 Edit `index.md`, save, and run `trylab` on the folder again.
 Add the things you learned here one at a time: a `shell` block, a `view` block, a layout with two panes, a service.
-You never need to publish anything to try an idea.
+You never need to list anything to try an idea.
 
-## Publish
+## List it
 
 When a lab is ready:
 
 1. Put the folder in a GitHub repository (a repository can hold many labs, one folder each).
 2. Sign in to runlabs.io with Google and open your **Profile**.
-3. Connect your repository there, refresh it, and publish the lab.
+3. Connect your repository there, refresh it, and **list** the lab.
 
-Published labs appear on the front page. A lab starts out unpublished, so nothing shows until you say so.
+Listed labs appear on the front page. A lab starts out unlisted, so nothing shows until you say so.
 
 ## Finish
 
-That is the whole loop: write a folder, run it with `trylab`, push it, publish it.
+That is the whole loop: write a folder, run it with `trylab`, push it, list it.
 Press **Complete lab** when you are ready, and then go make something.
