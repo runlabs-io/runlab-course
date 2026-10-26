@@ -4,6 +4,9 @@
 # runlab saves a snapshot when SSH accepts a connection. Ordering SSH
 # after nginx.service means that snapshot already has the server listening.
 # ssh.socket would accept the connection before that order applies.
+#
+# (A comment added on 2026-10-26 only to force a rebuild, to check the new builder.
+# It changes nothing about the lab.)
 set -euo pipefail
 trap '' HUP
 
