@@ -1,6 +1,6 @@
 title: The lesson directives
 description: Arrange panes, run a command, view a file, open a service and press a key, each as a block and as a link.
-disk_name: directives
+base: directives
 # The server this lab starts is the service the lesson opens. The type is
 # the word a service block shows in its header.
 services:

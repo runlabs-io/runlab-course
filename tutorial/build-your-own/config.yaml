@@ -1,4 +1,4 @@
 title: Build your own lab
 description: Get the author pack, run a lab on your own machine, and list it on runlabs.io.
-disk_name: default
+base: default
 time_limit: 20m

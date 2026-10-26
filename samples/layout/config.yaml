@@ -1,4 +1,4 @@
 title: Start in a layout
 description: The terminal opens in two panes named edit and run.
-disk_name: directives
+base: directives
 layout: two-pane
