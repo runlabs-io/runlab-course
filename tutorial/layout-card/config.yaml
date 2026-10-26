@@ -1,3 +1,3 @@
 title: Panes
 description: Arrange the terminal into one pane, two side by side, or two stacked, with a layout block.
-disk_name: default
+base: default
